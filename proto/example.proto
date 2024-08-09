@@ -1,0 +1,11 @@
+syntax = "proto3";
+package agent.v1alpha1;
+
+
+option go_package = "golang-proto-mqtt/gen/go/widget/v1alpha1";
+
+message SensorData {
+  string id = 1;
+  float temperature = 2;
+  float humidity = 3;
+}
